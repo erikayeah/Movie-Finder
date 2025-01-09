@@ -1,5 +1,78 @@
-# Vue 3 + Vite
+# Crear el archivo README.md
+echo "# Movie Finder
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple Vue 3 application to search and manage your favorite movies.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Features
+- Search movies in real-time
+- Add/remove movies to favorites
+- Sort favorites by newest, oldest, title, and year
+- Responsive design
+- Loading states and notifications
+
+## Setup
+
+1. Clone and install dependencies:
+\`\`\`
+git clone <your-repo>
+cd movie-finder
+npm install
+\`\`\`
+
+2. Create \`.env\` file in root directory:
+\`\`\`
+VITE_OMDB_API_KEY=ccd2a3c7
+\`\`\`
+
+3. Run development server:
+\`\`\`
+npm run dev
+\`\`\`
+
+## Tech Stack
+- Vue 3 (Composition API)
+- Vue Router
+- Vite
+- OMDB API
+- Local Storage
+
+## Project Structure
+\`\`\`
+movie-finder/
+├── src/
+│   ├── components/          
+│   │   ├── MovieSearch.vue
+│   │   ├── FavoriteMovies.vue
+│   │   ├── LoadingSpinner.vue
+│   │   ├── NotificationToast.vue
+│   │   └── Pagination.vue
+│   ├── views/              
+│   │   ├── HomeView.vue
+│   │   └── FavoritesView.vue
+│   ├── store/              
+│   │   └── favorites.js
+│   ├── utils/              
+│   │   ├── constants.js
+│   │   └── debounce.js
+│   ├── styles/             
+│   │   └── main.css
+│   ├── router/             
+│   │   └── index.js
+│   ├── App.vue            
+│   └── main.js            
+\`\`\`
+
+## Available Scripts
+\`\`\`
+# Development
+npm run dev
+
+# Build
+npm run build
+
+# Preview
+npm run preview
+\`\`\`
+
+## API
+This project uses the [OMDB API](http://www.omdbapi.com/)" > movie-finder/README.md
